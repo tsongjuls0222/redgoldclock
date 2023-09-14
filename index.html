@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="fullscreen">
+    <div class="wrapper-contact">
+        <img src="img/corner1.png" class="corner corner-1" alt="">
+        <img src="img/corner2.png" class="corner corner-2" alt="">
+        <img src="img/corner3.png" class="corner corner-3" alt="">
+        <img src="img/corner4.png" class="corner corner-4" alt="">
+        <div class="center-content">
+            <img src="img/logo.png" alt="">
+            <h1 class="silver">Live Streaming!</h1>
+            <h1 class="gold">+63907 999 9999</h1>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+    const fullscreenButton = document.getElementById('fullscreen');
+    let fsBool = false;
+    let fullScreen = document.documentElement;
+
+    fullscreenButton.addEventListener('click', toggleFullScreen);
+    
+    function toggleFullScreen(){
+        if(!fsBool){
+            fsBool = true;
+            openFullscreen();
+        }else{
+            fsBool = false;
+            closeFullscreen();
+        }
+    }
+
+    function openFullscreen(){
+        if (fullScreen.requestFullscreen) {
+            fullScreen.requestFullscreen();
+        } else if (fullScreen.webkitRequestFullscreen) { /* Safari */
+            fullScreen.webkitRequestFullscreen();
+        } else if (fullScreen.msRequestFullscreen) { /* IE11 */
+            fullScreen.msRequestFullscreen();
+        }
+    }
+
+    function closeFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) { /* Safari */
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE11 */
+            document.msExitFullscreen();
+        }
+    }
+
+</script>
+</html>
