@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="wrapper-contact">
@@ -16,10 +17,18 @@
         <img src="img/corner3.png" class="corner corner-3" alt="">
         <img src="img/corner4.png" class="corner corner-4" alt="">
         <div class="center-content">
-            <img src="img/logo.png" alt="">
-            <h1 class="silver">Live Streaming!</h1>
-            <h1 class="gold">+63907 999 9999</h1>
+            <div class="top-portion">
+                <img src="img/logo.png" alt="">
+                <div id="clockContainer">
+                    <div id="hour"></div>
+                    <div id="minute"></div>
+                    <div id="second"></div>
+                </div>
+            </div>
+            <h1 class="silver animate__animated animate__pulse">Live Streaming!</h1>
+            <h1 class="gold animate__animated animate__flipInX">+63907 999 9999</h1>
         </div>
     </div>
+    <script src="js/layout.js" type="text/javascript"></script>
 </body>
 </html>

@@ -396,3 +396,7 @@ img {
     cursor: not-allowed;
     pointer-events: none;
 }
+
+.animate__pulse{
+    animation-iteration-count: infinite;
+}

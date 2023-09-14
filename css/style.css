@@ -402,6 +402,10 @@ Explorer 10-11 */
   pointer-events: none;
 }
 
+.animate__pulse {
+  animation-iteration-count: infinite;
+}
+
 main {
   width: 100%;
   height: 100%;
@@ -475,6 +479,7 @@ section .wrapper .contact i {
 .wrapper-contact .corner {
   position: absolute;
   width: 153px;
+  filter: drop-shadow(0px 0px 6px rgb(2, 2, 2));
 }
 .wrapper-contact .corner.corner-1 {
   top: 10px;
@@ -504,13 +509,64 @@ section .wrapper .contact i {
   align-items: center;
   gap: 0;
 }
-.wrapper-contact .center-content img {
+.wrapper-contact .center-content .top-portion {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 46px;
+}
+.wrapper-contact .center-content .top-portion img {
   width: 340px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.697));
+}
+.wrapper-contact .center-content .top-portion #clockContainer {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: url(../img/clock.png) no-repeat;
+  /*setting our background image*/
+  background-size: 100%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.wrapper-contact .center-content .top-portion #clockContainer #hour,
+.wrapper-contact .center-content .top-portion #clockContainer #minute,
+.wrapper-contact .center-content .top-portion #clockContainer #second {
+  position: absolute;
+  background: -webkit-linear-gradient(#d9b043, #fff0c8, #dab147);
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+.wrapper-contact .center-content .top-portion #clockContainer #hour#hour,
+.wrapper-contact .center-content .top-portion #clockContainer #minute#hour,
+.wrapper-contact .center-content .top-portion #clockContainer #second#hour {
+  width: 1.8%;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+  opacity: 0.8;
+}
+.wrapper-contact .center-content .top-portion #clockContainer #hour#minute,
+.wrapper-contact .center-content .top-portion #clockContainer #minute#minute,
+.wrapper-contact .center-content .top-portion #clockContainer #second#minute {
+  width: 1.6%;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+  opacity: 0.8;
+}
+.wrapper-contact .center-content .top-portion #clockContainer #hour#second,
+.wrapper-contact .center-content .top-portion #clockContainer #minute#second,
+.wrapper-contact .center-content .top-portion #clockContainer #second#second {
+  width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.25%;
+  opacity: 0.8;
 }
 .wrapper-contact .center-content h1 {
   padding: 0;
   margin: 0;
-  font-size: 12.2vw;
+  font-size: 11.4vw;
   white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
@@ -518,7 +574,7 @@ section .wrapper .contact i {
   filter: drop-shadow(0 0 3px #000);
 }
 .wrapper-contact .center-content h1:last-child {
-  font-size: 11.5vw;
+  font-size: 11.6vw;
   position: relative;
 }
 
