@@ -67,6 +67,7 @@ section{
     .corner{
         position: absolute;
         width: 153px;
+        filter: drop-shadow(0px 0px 6px rgb(2, 2, 2));
         &.corner-1{
             top: 10px;
             left: 10px;
@@ -94,19 +95,66 @@ section{
         flex-direction: column;
         align-items: center;
         gap: 0;
-        img{
-            width: 340px;
+        .top-portion{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 46px;
+            img{
+                width: 340px;
+                filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.697));
+            }
+            #clockContainer {
+                position: relative;
+                height: 200px;
+                width: 200px;
+                background: url(../img/clock.png) no-repeat;
+                /*setting our background image*/
+                background-size: 100%;
+                filter: drop-shadow(2px 4px 6px black);
+                #hour,
+                #minute,
+                #second {
+                    position: absolute;
+                    background: -webkit-linear-gradient(#d9b043, #fff0c8, #dab147);
+                    border-radius: 10px;
+                    transform-origin: bottom;
+                    &#hour {
+                        width: 1.8%;
+                        height: 25%;
+                        top: 25%;
+                        left: 48.85%;
+                        opacity: 0.8;
+                    }
+                    
+                    &#minute {
+                        width: 1.6%;
+                        height: 30%;
+                        top: 19%;
+                        left: 48.9%;
+                        opacity: 0.8;
+                    }
+                    
+                    &#second {
+                        width: 1%;
+                        height: 40%;
+                        top: 9%;
+                        left: 49.25%;
+                        opacity: 0.8;
+                    }
+                }
+            }   
         }
         h1{
             padding: 0;
             margin: 0;
-            font-size: 12.2vw;
+            font-size: 11.4vw;
             white-space: nowrap;
             width: fit-content;
             font-weight: 900;
             filter: drop-shadow(0 0 3px #000);
             &:last-child{
-                font-size: 11.5vw;
+                font-size: 11.6vw;
                 position: relative;
             }
         }
