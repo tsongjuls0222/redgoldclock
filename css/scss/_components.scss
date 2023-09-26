@@ -52,4 +52,27 @@
     z-index: 100;
     left: 0;
     top: 0;
+    .pop-center{
+        height: 200px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        border-radius: 5px;
+        background-image: url(../img/main-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #fff8a454;
+        font-family: 'Roboto Condensed';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-size: 11vw;
+            font-weight: 900;
+        }
+    }
 }

@@ -181,6 +181,7 @@ html, body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -729,7 +730,7 @@ section .wrapper .contact i {
     margin-right: 20px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .clock {
     transform: scale(0.5);
     right: 33px;
@@ -800,4 +801,27 @@ section .wrapper .contact i {
   z-index: 100;
   left: 0;
   top: 0;
+}
+.pop-up .pop-center {
+  height: 200px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  border-radius: 5px;
+  background-image: url(../img/main-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(255, 248, 164, 0.3294117647);
+  font-family: "Roboto Condensed";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up .pop-center h3 {
+  font-size: 11vw;
+  font-weight: 900;
 }/*# sourceMappingURL=style.css.map */
