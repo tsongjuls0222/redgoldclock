@@ -149,14 +149,13 @@ section{
         }
         h1{
             padding: 0;
-            // margin: 47px 0;
             font-size: 10vw;
             white-space: nowrap;
             width: fit-content;
             font-weight: 900;
             filter: drop-shadow(0 0 3px #000);
             &:last-child{
-                font-size: 10vw;
+                font-size: 8.5vw;
                 position: relative;
             }
         }
@@ -301,6 +300,26 @@ section{
             }
         }
     }
+    .clock{
+        transform: scale(0.5);
+        right: 33px;
+    }
+    .wrapper-contact{
+        .corner{
+            width: 94px;
+        }
+        .center-content{
+            height: 86%;
+            .top-portion{
+                margin-bottom: 0;
+                img{
+                    transform: scale(0.6);
+                    position: relative;
+                    left: 84px;                
+                }
+            }
+        }
+    }
 }
 @media (max-width:802px){
     section{
@@ -325,26 +344,6 @@ section{
                 white-space: nowrap;
                 i{
                     margin-right: 20px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:900px){
-    .clock{
-        transform: scale(0.5);
-        right: 33px;
-    }
-    .wrapper-contact{
-        .center-content{
-            height: 86%;
-            .top-portion{
-                margin-bottom: 0;
-                img{
-                    transform: scale(0.6);
-                    position: relative;
-                    left: 84px;                
                 }
             }
         }

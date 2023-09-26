@@ -592,7 +592,7 @@ section .wrapper .contact i {
   filter: drop-shadow(0 0 3px #000);
 }
 .wrapper-contact .center-content h1:last-child {
-  font-size: 10vw;
+  font-size: 8.5vw;
   position: relative;
 }
 
@@ -705,6 +705,24 @@ section .wrapper .contact i {
   section .wrapper .contact i {
     margin-right: 20px;
   }
+  .clock {
+    transform: scale(0.5);
+    right: 33px;
+  }
+  .wrapper-contact .corner {
+    width: 94px;
+  }
+  .wrapper-contact .center-content {
+    height: 86%;
+  }
+  .wrapper-contact .center-content .top-portion {
+    margin-bottom: 0;
+  }
+  .wrapper-contact .center-content .top-portion img {
+    transform: scale(0.6);
+    position: relative;
+    left: 84px;
+  }
 }
 @media (max-width: 802px) {
   section .wrapper .time {
@@ -728,23 +746,6 @@ section .wrapper .contact i {
   }
   section .wrapper .contact i {
     margin-right: 20px;
-  }
-}
-@media (max-width: 900px) {
-  .clock {
-    transform: scale(0.5);
-    right: 33px;
-  }
-  .wrapper-contact .center-content {
-    height: 86%;
-  }
-  .wrapper-contact .center-content .top-portion {
-    margin-bottom: 0;
-  }
-  .wrapper-contact .center-content .top-portion img {
-    transform: scale(0.6);
-    position: relative;
-    left: 84px;
   }
 }
 .clock {
@@ -803,7 +804,8 @@ section .wrapper .contact i {
   top: 0;
 }
 .pop-up .pop-center {
-  height: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
   background: #000;
   position: absolute;
   top: 50%;
@@ -816,12 +818,13 @@ section .wrapper .contact i {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid rgba(255, 248, 164, 0.3294117647);
-  font-family: "Roboto Condensed";
+  font-family: "RamseyCondesed";
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px 0;
 }
 .pop-up .pop-center h3 {
-  font-size: 11vw;
+  font-size: 9vw;
   font-weight: 900;
 }/*# sourceMappingURL=style.css.map */
