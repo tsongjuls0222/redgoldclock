@@ -826,9 +826,14 @@ section .wrapper .contact i {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 30px 0;
 }
 .pop-up .pop-center h3 {
   font-size: 9vw;
   font-weight: 900;
+}
+.pop-up .pop-center span {
+  font-size: 30px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

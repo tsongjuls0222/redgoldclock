@@ -74,10 +74,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         padding: 30px 0;
         h3{
             font-size: 9vw;
             font-weight: 900;
+        }
+        span{
+            font-size: 30px;
+            color: #fff;
         }
     }
 }
