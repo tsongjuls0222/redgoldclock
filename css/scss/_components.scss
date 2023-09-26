@@ -1,0 +1,55 @@
+.clock{
+    display: flex;
+    align-items: center;
+    font-size: 170px;
+    font-weight: 700;
+    .hour,.minutes{
+        display: flex;
+        align-items: center;
+        background: #00000087;
+        padding: 5px;
+        border-radius: 5px;
+        filter: drop-shadow(0 0 3px #000);
+        .digit{
+            background-image: url(../img/number-panel.png);
+            width: 117px;
+            height: 192px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto Condensed';
+            span{
+                background: -webkit-linear-gradient(#ffb900, #ffeab1, #ffb800);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 3px #000);
+            }
+        }
+    }
+    .colon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            line-height: 1;
+            padding-bottom: 27px;
+            background: -webkit-linear-gradient(#ffb900, #ffeab1, #ffb800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 3px #000);
+        }
+    }
+}
+
+.pop-up{
+    width: 100%;
+    height: 100%;
+    background: #000000ce;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
