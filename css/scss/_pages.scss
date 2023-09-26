@@ -288,6 +288,13 @@ section{
     }
 }
 @media (max-width:972px){
+    .pop-up {
+        .pop-center-parent{
+            .silver{
+                margin-bottom: 55px !important;
+            }
+        }
+    }
     .wrapper-contact{
         .center-content{
             transform: translate(-50%, -55%);
