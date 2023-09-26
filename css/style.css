@@ -499,7 +499,7 @@ section .wrapper .contact i {
   transition: 0.5s ease-in-out;
 }
 .wrapper-contact.darken .corner {
-  opacity: 1;
+  opacity: 0.2;
 }
 .wrapper-contact .corner {
   position: absolute;
