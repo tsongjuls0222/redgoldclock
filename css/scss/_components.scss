@@ -65,11 +65,11 @@
     .pop-center-parent{
         position: absolute;
         left: 50%;
-        bottom: 35px;
+        bottom: 12%;
         transform: translateX(-50%);
         width: 95%;
         .silver{
-            margin-bottom: 15px;
+            margin-bottom: 100px;
             text-align: center;
         }
         .pop-center{
@@ -86,7 +86,8 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            padding:0;
+            padding:10px;
+            line-height: 0;
             h3{
                 font-size: 9vw;
                 font-weight: 900;

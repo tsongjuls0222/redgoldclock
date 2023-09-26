@@ -599,6 +599,9 @@ section .wrapper .contact i {
   font-weight: 900;
   filter: drop-shadow(0 0 3px #000);
 }
+.wrapper-contact .center-content h1.hide {
+  visibility: hidden;
+}
 .wrapper-contact .center-content h1.silver {
   margin-bottom: 38px;
 }
@@ -830,12 +833,12 @@ section .wrapper .contact i {
 .pop-up .pop-center-parent {
   position: absolute;
   left: 50%;
-  bottom: 35px;
+  bottom: 12%;
   transform: translateX(-50%);
   width: 95%;
 }
 .pop-up .pop-center-parent .silver {
-  margin-bottom: 15px;
+  margin-bottom: 100px;
   text-align: center;
 }
 .pop-up .pop-center-parent .pop-center {
@@ -853,7 +856,8 @@ section .wrapper .contact i {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0;
+  padding: 10px;
+  line-height: 0;
 }
 .pop-up .pop-center-parent .pop-center h3 {
   font-size: 9vw;

@@ -162,6 +162,9 @@ section{
             width: fit-content;
             font-weight: 900;
             filter: drop-shadow(0 0 3px #000);
+            &.hide{
+                visibility: hidden;
+            }
             &.silver{
                 margin-bottom: 38px;
             }
