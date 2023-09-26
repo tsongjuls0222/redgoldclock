@@ -487,6 +487,7 @@ section .wrapper .contact i {
   width: 100%;
   height: 100%;
   background-image: url(../img/main-bg.png);
+  transition: 0.5s ease-in-out;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -495,9 +496,10 @@ section .wrapper .contact i {
 }
 .wrapper-contact.darken {
   background-image: url(../img/main-bg-2.png);
+  transition: 0.5s ease-in-out;
 }
 .wrapper-contact.darken .corner {
-  opacity: 0.4;
+  opacity: 1;
 }
 .wrapper-contact .corner {
   position: absolute;
