@@ -584,7 +584,7 @@ section .wrapper .contact i {
 }
 .wrapper-contact .center-content h1 {
   padding: 0;
-  font-size: 10vw;
+  font-size: 10.5vw;
   white-space: nowrap;
   width: -moz-fit-content;
   width: fit-content;
@@ -802,6 +802,10 @@ section .wrapper .contact i {
   z-index: 100;
   left: 0;
   top: 0;
+  display: none;
+}
+.pop-up.show {
+  display: block;
 }
 .pop-up .pop-center {
   height: -moz-fit-content;

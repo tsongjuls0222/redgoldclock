@@ -52,6 +52,10 @@
     z-index: 100;
     left: 0;
     top: 0;
+    display: none;
+    &.show{
+        display: block;
+    }
     .pop-center{
         height: fit-content;
         background: #000;

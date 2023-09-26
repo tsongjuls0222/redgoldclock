@@ -35,6 +35,32 @@ function closeFullscreen() {
     }
 }
 
-$(document).ready(function(){
-    // $()
-})
+function myTimer(){
+    // Create a new Date object
+    const currentDate = new Date();
+    
+    // Get the current date and time
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth() + 1; // Months are zero-based, so add 1
+    const day = currentDate.getDate();
+    const hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const seconds = currentDate.getSeconds();
+    const inday = currentDate.getDay()
+
+    $(".clock .hour .digit:first-child span").html(formatTime(hours).toString().charAt(0));
+    $(".clock .hour .digit:last-child span").html(formatTime(hours).toString().charAt(1));
+    $(".clock .minutes .digit:first-child span").html(formatTime(minutes).toString().charAt(0));
+    $(".clock .minutes .digit:last-child span").html(formatTime(minutes).toString().charAt(1));
+}
+
+function formatTime(num){
+    if(num <= 9){
+        num = "0" + num;
+    }
+    return num;
+}
+
+setInterval(() => {
+    myTimer();
+}, 1000)
