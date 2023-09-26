@@ -707,7 +707,7 @@ section .wrapper .contact i {
   }
   .clock {
     transform: scale(0.5);
-    right: 33px;
+    right: 5%;
   }
   .wrapper-contact .corner {
     width: 94px;
@@ -721,7 +721,7 @@ section .wrapper .contact i {
   .wrapper-contact .center-content .top-portion img {
     transform: scale(0.6);
     position: relative;
-    left: 84px;
+    left: 8%;
   }
 }
 @media (max-width: 802px) {
