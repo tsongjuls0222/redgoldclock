@@ -26,6 +26,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 filter: drop-shadow(0 0 3px #000);
+                line-height: 1;
             }
         }
     }
@@ -56,33 +57,44 @@
     &.show{
         display: block;
     }
-    .pop-center{
-        height: fit-content;
-        background: #000;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 95%;
-        border-radius: 5px;
-        background-image: url(../img/main-bg.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 1px solid #fff8a454;
+    .silver{
         font-family: 'RamseyCondesed';
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 30px 0;
-        h3{
-            font-size: 9vw;
-            font-weight: 900;
+        font-size: 10.5vw;
+        white-space: nowrap;
+    }
+    .pop-center-parent{
+        position: absolute;
+        left: 50%;
+        bottom: 35px;
+        transform: translateX(-50%);
+        width: 95%;
+        .silver{
+            margin-bottom: 15px;
+            text-align: center;
         }
-        span{
-            font-size: 30px;
-            color: #fff;
+        .pop-center{
+            height: fit-content;
+            background: #000;
+            border-radius: 5px;
+            background-image: url(../img/main-bg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid #fff8a454;
+            font-family: 'RamseyCondesed';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding:0;
+            h3{
+                font-size: 9vw;
+                font-weight: 900;
+            }
+            span{
+                font-size: 30px;
+                color: #fff;
+            }
         }
     }
 }

@@ -64,6 +64,12 @@ section{
     background-repeat: no-repeat;
     position: relative;
     font-family: 'RamseyCondesed';
+    &.darken{
+        background-image: url(../img/main-bg-2.png);
+        .corner{
+            opacity: 0.4;
+        }
+    }
     .corner{
         position: absolute;
         width: 153px;
@@ -88,9 +94,9 @@ section{
     .center-content{
         width: fit-content;
         position: absolute;
-        top: 49%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -51%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -154,6 +160,9 @@ section{
             width: fit-content;
             font-weight: 900;
             filter: drop-shadow(0 0 3px #000);
+            &.silver{
+                margin-bottom: 38px;
+            }
             &:last-child{
                 font-size: 8.5vw;
                 position: relative;
@@ -274,6 +283,11 @@ section{
     }
 }
 @media (max-width:972px){
+    .wrapper-contact{
+        .center-content{
+            transform: translate(-50%, -55%);
+        }
+    }
     section{
         .wrapper{
             .time{
@@ -313,10 +327,10 @@ section{
             .top-portion{
                 margin-bottom: 0;
                 img{
-                    transform: scale(0.6);
+                    transform: scale(0.5);
                     position: relative;
-                    left: 8%;                
-                }
+                    left: 7%;              
+                } 
             }
         }
     }

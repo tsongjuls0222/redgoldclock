@@ -177,7 +177,7 @@ html, body {
   font-family: "Digital";
   font-weight: 100;
   height: 100%;
-  background: linear-gradient(86deg, rgb(217, 158, 0) 0%, rgb(255, 218, 121) 49%, rgb(179, 130, 0) 100%);
+  background: linear-gradient(86deg, rgb(6, 6, 6) 0%, rgb(35, 35, 35) 49%, rgb(6, 6, 6) 100%);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -493,6 +493,12 @@ section .wrapper .contact i {
   position: relative;
   font-family: "RamseyCondesed";
 }
+.wrapper-contact.darken {
+  background-image: url(../img/main-bg-2.png);
+}
+.wrapper-contact.darken .corner {
+  opacity: 0.4;
+}
 .wrapper-contact .corner {
   position: absolute;
   width: 153px;
@@ -518,9 +524,9 @@ section .wrapper .contact i {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -51%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -590,6 +596,9 @@ section .wrapper .contact i {
   width: fit-content;
   font-weight: 900;
   filter: drop-shadow(0 0 3px #000);
+}
+.wrapper-contact .center-content h1.silver {
+  margin-bottom: 38px;
 }
 .wrapper-contact .center-content h1:last-child {
   font-size: 8.5vw;
@@ -683,6 +692,9 @@ section .wrapper .contact i {
   }
 }
 @media (max-width: 972px) {
+  .wrapper-contact .center-content {
+    transform: translate(-50%, -55%);
+  }
   section .wrapper .time {
     display: flex;
     align-items: flex-end;
@@ -719,9 +731,9 @@ section .wrapper .contact i {
     margin-bottom: 0;
   }
   .wrapper-contact .center-content .top-portion img {
-    transform: scale(0.6);
+    transform: scale(0.5);
     position: relative;
-    left: 8%;
+    left: 7%;
   }
 }
 @media (max-width: 802px) {
@@ -779,6 +791,7 @@ section .wrapper .contact i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 3px #000);
+  line-height: 1;
 }
 .clock .colon {
   display: flex;
@@ -807,15 +820,26 @@ section .wrapper .contact i {
 .pop-up.show {
   display: block;
 }
-.pop-up .pop-center {
+.pop-up .silver {
+  font-family: "RamseyCondesed";
+  font-size: 10.5vw;
+  white-space: nowrap;
+}
+.pop-up .pop-center-parent {
+  position: absolute;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  width: 95%;
+}
+.pop-up .pop-center-parent .silver {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.pop-up .pop-center-parent .pop-center {
   height: -moz-fit-content;
   height: fit-content;
   background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 95%;
   border-radius: 5px;
   background-image: url(../img/main-bg.png);
   background-position: center;
@@ -827,13 +851,13 @@ section .wrapper .contact i {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px 0;
+  padding: 0;
 }
-.pop-up .pop-center h3 {
+.pop-up .pop-center-parent .pop-center h3 {
   font-size: 9vw;
   font-weight: 900;
 }
-.pop-up .pop-center span {
+.pop-up .pop-center-parent .pop-center span {
   font-size: 30px;
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
