@@ -538,13 +538,15 @@ section .wrapper .contact i {
 }
 .wrapper-contact .center-content .top-portion {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-bottom: 46px;
 }
 .wrapper-contact .center-content .top-portion img {
-  width: 340px;
+  width: 245px;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.697));
+  height: 147px;
 }
 .wrapper-contact .center-content .top-portion #clockContainer {
   position: relative;
@@ -622,159 +624,19 @@ section .wrapper .contact i {
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 1664px) {
-  section .wrapper .time h1, section .wrapper .time .colon {
-    font-size: 350px;
-  }
-  section .wrapper .time .secs {
-    font-size: 40px;
-  }
-  section .wrapper .date {
-    font-size: 40px;
-  }
-  section .wrapper .contact {
-    font-size: 106px;
-  }
-}
-@media (max-width: 1452px) {
-  section .wrapper .time h1, section .wrapper .time .colon {
-    font-size: 300px;
-  }
-  section .wrapper .time .secs {
-    font-size: 40px;
-  }
-  section .wrapper .date {
-    font-size: 40px;
-  }
-  section .wrapper .contact {
-    font-size: 88px;
-  }
-}
-@media (max-width: 1272px) {
-  section .wrapper .time h1, section .wrapper .time .colon {
-    font-size: 250px;
-  }
-  section .wrapper .time .secs {
-    font-size: 40px;
-  }
-  section .wrapper .date {
-    font-size: 40px;
-  }
-  section .wrapper .contact {
-    font-size: 66px;
-  }
-  .clock {
-    transform: scale(0.7);
-    position: relative;
-    right: -49px;
-  }
-  .wrapper-contact .center-content .top-portion img {
-    transform: scale(0.8);
-  }
-}
-@media (max-width: 1100px) {
-  section .wrapper .time {
-    display: flex;
-    align-items: flex-end;
-    gap: 64px;
-  }
-  section .wrapper .time h1, section .wrapper .time .colon {
-    font-size: 200px;
-    line-height: 1;
-  }
-  section .wrapper .time .secs {
-    font-size: 61px;
-  }
-  section .wrapper .date {
-    font-size: 30px;
-  }
-  section .contact {
-    font-size: 65px;
-    white-space: nowrap;
-  }
-  section .contact i {
-    margin-right: 20px;
-  }
-}
-@media (max-width: 972px) {
-  .pop-up .pop-center-parent .silver {
-    margin-bottom: 25px !important;
-  }
-  .wrapper-contact .center-content {
-    transform: translate(-50%, -55%);
-  }
-  section .wrapper .time {
-    display: flex;
-    align-items: flex-end;
-    gap: 64px;
-  }
-  section .wrapper .time h1, section .wrapper .time .colon {
-    font-size: 150px;
-    line-height: 1;
-  }
-  section .wrapper .time .secs {
-    font-size: 61px;
-  }
-  section .wrapper .date {
-    font-size: 30px;
-  }
-  section .wrapper .contact {
-    font-size: 52px;
-    white-space: nowrap;
-  }
-  section .wrapper .contact i {
-    margin-right: 20px;
-  }
-  .clock {
-    transform: scale(0.5);
-    right: 5%;
-  }
-  .wrapper-contact .corner {
-    width: 94px;
-  }
-  .wrapper-contact .center-content {
-    height: 86%;
-  }
-  .wrapper-contact .center-content .top-portion {
-    margin-bottom: 0;
-  }
-  .wrapper-contact .center-content .top-portion img {
-    transform: scale(0.5);
-    position: relative;
-    left: 7%;
-  }
-}
-@media (max-width: 802px) {
-  section .wrapper .time {
-    display: flex;
-    align-items: flex-end;
-    gap: 64px;
-  }
-  section .wrapper .time h1, section .wrapper .time .colon {
-    font-size: 129px;
-    line-height: 1;
-  }
-  section .wrapper .time .secs {
-    font-size: 61px;
-  }
-  section .wrapper .date {
-    font-size: 30px;
-  }
-  section .wrapper .contact {
-    font-size: 43px;
-    white-space: nowrap;
-  }
-  section .wrapper .contact i {
-    margin-right: 20px;
-  }
-}
 .clock {
   display: flex;
   align-items: center;
-  font-size: 170px;
+  font-size: 132px;
   font-weight: 700;
 }
-.clock .hour, .clock .minutes {
+.clock .date {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  gap: 13px;
+}
+.clock .date .month, .clock .date .date, .clock .date .year {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.5294117647);
@@ -782,10 +644,10 @@ section .wrapper .contact i {
   border-radius: 5px;
   filter: drop-shadow(0 0 3px #000);
 }
-.clock .hour .digit, .clock .minutes .digit {
+.clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
   background-image: url(../img/number-panel.png);
-  width: 117px;
-  height: 192px;
+  width: 78px;
+  height: 134px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -794,7 +656,44 @@ section .wrapper .contact i {
   justify-content: center;
   font-family: "Roboto Condensed";
 }
-.clock .hour .digit span, .clock .minutes .digit span {
+.clock .date .month .digit span, .clock .date .date .digit span, .clock .date .year .digit span {
+  background: -webkit-linear-gradient(#ffb900, #ffeab1, #ffb800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 3px #000);
+  line-height: 1;
+}
+.clock .panel {
+  text-align: center;
+}
+.clock .panel h4 {
+  margin-top: 10px;
+  text-shadow: 0 0 4px BLACK;
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+}
+.clock .panel .hour, .clock .panel .minutes {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5294117647);
+  padding: 5px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 3px #000);
+}
+.clock .panel .hour .digit, .clock .panel .minutes .digit {
+  background-image: url(../img/number-panel.png);
+  width: 78px;
+  height: 134px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Condensed";
+}
+.clock .panel .hour .digit span, .clock .panel .minutes .digit span {
   background: -webkit-linear-gradient(#ffb900, #ffeab1, #ffb800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -805,14 +704,16 @@ section .wrapper .contact i {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .clock .colon p {
   line-height: 1;
-  padding-bottom: 27px;
   background: -webkit-linear-gradient(#ffb900, #ffeab1, #ffb800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 3px #000);
+  position: relative;
+  top: -33px;
 }
 
 .pop-up {
@@ -869,4 +770,79 @@ section .wrapper .contact i {
 .pop-up .pop-center-parent .pop-center span {
   font-size: 30px;
   color: #fff;
+}
+
+@media (max-width: 1692px) {
+  .clock {
+    font-size: 84px;
+  }
+  .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
+    width: 54px !important;
+    height: 91px !important;
+  }
+  .clock .panel .hour .digit, .clock .panel .minutes .digit {
+    width: 54px !important;
+    height: 91px !important;
+  }
+  .clock .colon p {
+    top: -24px;
+  }
+}
+@media (max-width: 1304px) {
+  .clock {
+    font-size: 58px;
+  }
+  .clock .date {
+    margin-right: 19px;
+  }
+  .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
+    width: 42px !important;
+    height: 71px !important;
+  }
+  .clock .panel .hour .digit, .clock .panel .minutes .digit {
+    width: 42px !important;
+    height: 71px !important;
+  }
+  .clock .colon p {
+    top: -18px;
+  }
+  .wrapper-contact .center-content .top-portion img {
+    width: 177px;
+    height: 106px;
+  }
+}
+@media (max-width: 1000px) {
+  .pop-up .pop-center-parent .silver {
+    margin-bottom: 25px !important;
+  }
+  .clock {
+    font-size: 48px;
+  }
+  .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
+    width: 31px !important;
+    height: 52px !important;
+  }
+  .clock .panel h4 {
+    font-size: 15px;
+  }
+  .clock .panel .hour .digit, .clock .panel .minutes .digit {
+    width: 31px !important;
+    height: 52px !important;
+  }
+  .clock .colon p {
+    top: -18px;
+  }
+  .wrapper-contact .center-content .top-portion img {
+    width: 138px;
+    height: 88px;
+  }
+  .wrapper-contact .corner {
+    width: 82px;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper-contact .center-content .top-portion img {
+    width: 83px;
+    height: 55px;
+  }
 }/*# sourceMappingURL=style.css.map */

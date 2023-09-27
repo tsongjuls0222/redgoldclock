@@ -1,0 +1,125 @@
+@media (max-width:1692px){
+    .clock{
+        font-size: 84px;
+        .date{
+            .month,.date,.year{
+                .digit{
+                    width: 54px !important;
+                    height: 91px !important;
+                }
+            }
+        }
+        .panel{
+            .hour,.minutes{
+                .digit{
+                    width: 54px !important;
+                    height: 91px !important;
+                }
+            }
+        }
+        .colon{
+            p{
+                top: -24px;
+            }
+        }
+    }
+}
+
+@media (max-width:1304px){
+    .clock{
+        font-size: 58px;
+        .date{
+            margin-right: 19px;
+            .month,.date,.year{
+                .digit{
+                    width: 42px !important;
+                    height: 71px !important;                
+                }
+            }
+        }
+        .panel{
+            .hour,.minutes{
+                .digit{
+                    width: 42px !important;
+                    height: 71px !important;                
+                }
+            }
+        }
+        .colon{
+            p{
+                top: -18px;
+            }
+        }
+    }
+    .wrapper-contact{
+        .center-content{
+            .top-portion{
+                img{
+                    width: 177px;
+                    height: 106px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1000px){
+    .pop-up {
+        .pop-center-parent{
+            .silver{
+                margin-bottom: 25px !important;
+            }
+        }
+    }
+    .clock{
+        font-size: 48px;
+        .date{
+            .month,.date,.year{
+                .digit{
+                    width: 31px !important;
+                    height: 52px !important;           
+                }
+            }
+        }
+        .panel{
+            h4{
+                font-size: 15px;
+            }
+            .hour,.minutes{
+                .digit{
+                    width: 31px !important;
+                    height: 52px !important;              
+                }
+            }
+        }
+        .colon{
+            p{
+                top: -18px;
+            }
+        }
+    }
+    .wrapper-contact{
+        .center-content{
+            .top-portion{
+                img{
+                    width: 138px;
+                    height: 88px;                
+                }
+            }
+        }
+        .corner{
+            width: 82px;
+        }
+    }
+}
+@media (max-width:800px){
+    .wrapper-contact{
+        .center-content{
+            .top-portion{
+                img{
+                    width: 83px;
+                    height: 55px;    
+                }
+            }
+        }
+    }
+}
