@@ -10,7 +10,7 @@
             }
         }
         .panel{
-            .hour,.minutes{
+            .hour,.minutes,.seconds{
                 .digit{
                     width: 54px !important;
                     height: 91px !important;
@@ -38,7 +38,7 @@
             }
         }
         .panel{
-            .hour,.minutes{
+            .hour,.minutes,.seconds{
                 .digit{
                     width: 42px !important;
                     height: 71px !important;                
@@ -84,7 +84,7 @@
             h4{
                 font-size: 15px;
             }
-            .hour,.minutes{
+            .hour,.minutes,.seconds{
                 .digit{
                     width: 31px !important;
                     height: 52px !important;              

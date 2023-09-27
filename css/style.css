@@ -674,7 +674,7 @@ section .wrapper .contact i {
   font-family: "Roboto Condensed";
   font-weight: 700;
 }
-.clock .panel .hour, .clock .panel .minutes {
+.clock .panel .hour, .clock .panel .minutes, .clock .panel .seconds {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.5294117647);
@@ -682,7 +682,7 @@ section .wrapper .contact i {
   border-radius: 5px;
   filter: drop-shadow(0 0 3px #000);
 }
-.clock .panel .hour .digit, .clock .panel .minutes .digit {
+.clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
   background-image: url(../img/number-panel.png);
   width: 78px;
   height: 134px;
@@ -694,7 +694,7 @@ section .wrapper .contact i {
   justify-content: center;
   font-family: "Roboto Condensed";
 }
-.clock .panel .hour .digit span, .clock .panel .minutes .digit span {
+.clock .panel .hour .digit span, .clock .panel .minutes .digit span, .clock .panel .seconds .digit span {
   background: -webkit-linear-gradient(#ffb900, #ffeab1, #ffb800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -781,7 +781,7 @@ section .wrapper .contact i {
     width: 54px !important;
     height: 91px !important;
   }
-  .clock .panel .hour .digit, .clock .panel .minutes .digit {
+  .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
     width: 54px !important;
     height: 91px !important;
   }
@@ -800,7 +800,7 @@ section .wrapper .contact i {
     width: 42px !important;
     height: 71px !important;
   }
-  .clock .panel .hour .digit, .clock .panel .minutes .digit {
+  .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
     width: 42px !important;
     height: 71px !important;
   }
@@ -826,7 +826,7 @@ section .wrapper .contact i {
   .clock .panel h4 {
     font-size: 15px;
   }
-  .clock .panel .hour .digit, .clock .panel .minutes .digit {
+  .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
     width: 31px !important;
     height: 52px !important;
   }

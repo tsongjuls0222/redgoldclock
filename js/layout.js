@@ -52,6 +52,8 @@ function myTimer(){
     $(".clock .hour .digit:last-child span").html(formatTime(hours).toString().charAt(1));
     $(".clock .minutes .digit:first-child span").html(formatTime(minutes).toString().charAt(0));
     $(".clock .minutes .digit:last-child span").html(formatTime(minutes).toString().charAt(1));
+    $(".clock .seconds .digit:first-child span").html(formatTime(seconds).toString().charAt(0));
+    $(".clock .seconds .digit:last-child span").html(formatTime(seconds).toString().charAt(1));
 }
 
 function formatTime(num){
