@@ -817,25 +817,25 @@ section .wrapper .contact i {
     margin-bottom: 25px !important;
   }
   .clock {
-    font-size: 48px;
+    font-size: 61px;
   }
   .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
-    width: 31px !important;
-    height: 52px !important;
+    width: 44px !important;
+    height: 73px !important;
   }
   .clock .panel h4 {
     font-size: 15px;
   }
   .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
-    width: 31px !important;
-    height: 52px !important;
+    width: 44px !important;
+    height: 73px !important;
   }
   .clock .colon p {
     top: -18px;
   }
   .wrapper-contact .center-content .top-portion img {
-    width: 138px;
-    height: 88px;
+    width: 220px;
+    height: 136px;
   }
   .wrapper-contact .corner {
     width: 82px;
