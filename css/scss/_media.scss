@@ -27,21 +27,21 @@
 
 @media (max-width:1304px){
     .clock{
-        font-size: 58px;
+        font-size: 91px;
         .date{
             margin-right: 19px;
             .month,.date,.year{
                 .digit{
-                    width: 42px !important;
-                    height: 71px !important;                
+                    width: 56px !important;
+                    height: 88px !important;                         
                 }
             }
         }
         .panel{
             .hour,.minutes,.seconds{
                 .digit{
-                    width: 42px !important;
-                    height: 71px !important;                
+                    width: 56px !important;
+                    height: 88px !important;                         
                 }
             }
         }
@@ -55,8 +55,8 @@
         .center-content{
             .top-portion{
                 img{
-                    width: 177px;
-                    height: 106px;
+                    width: 258px;
+                    height: 158px;
                 }
             }
         }

@@ -110,7 +110,7 @@ section{
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            margin-bottom: 46px;
+            margin-bottom: -78px;
             img{
                 width: 245px;
                 filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.697));
@@ -168,10 +168,10 @@ section{
                 visibility: hidden;
             }
             &.silver{
-                margin-bottom: 38px;
+                margin-bottom: -106px;
             }
             &:last-child{
-                font-size: 8.5vw;
+                font-size: 10.5vw;
                 position: relative;
             }
         }

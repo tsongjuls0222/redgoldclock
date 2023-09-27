@@ -541,7 +541,7 @@ section .wrapper .contact i {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: -78px;
 }
 .wrapper-contact .center-content .top-portion img {
   width: 245px;
@@ -605,10 +605,10 @@ section .wrapper .contact i {
   visibility: hidden;
 }
 .wrapper-contact .center-content h1.silver {
-  margin-bottom: 38px;
+  margin-bottom: -106px;
 }
 .wrapper-contact .center-content h1:last-child {
-  font-size: 8.5vw;
+  font-size: 10.5vw;
   position: relative;
 }
 
@@ -629,7 +629,7 @@ section .wrapper .contact i {
   align-items: center;
   font-size: 132px;
   font-weight: 700;
-  gap: 19px;
+  gap: 8px;
 }
 .clock .date {
   display: flex;
@@ -791,25 +791,25 @@ section .wrapper .contact i {
 }
 @media (max-width: 1304px) {
   .clock {
-    font-size: 58px;
+    font-size: 91px;
   }
   .clock .date {
     margin-right: 19px;
   }
   .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
-    width: 42px !important;
-    height: 71px !important;
+    width: 56px !important;
+    height: 88px !important;
   }
   .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
-    width: 42px !important;
-    height: 71px !important;
+    width: 56px !important;
+    height: 88px !important;
   }
   .clock .colon p {
     top: -18px;
   }
   .wrapper-contact .center-content .top-portion img {
-    width: 177px;
-    height: 106px;
+    width: 258px;
+    height: 158px;
   }
 }
 @media (max-width: 1000px) {
