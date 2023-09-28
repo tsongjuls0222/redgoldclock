@@ -829,39 +829,4 @@ section .wrapper .contact i {
     width: 258px;
     height: 158px;
   }
-}
-@media (max-width: 1000px) {
-  .pop-up .pop-center-parent .silver {
-    margin-bottom: 25px !important;
-  }
-  .clock {
-    font-size: 73px;
-  }
-  .clock .date .month .digit, .clock .date .date .digit, .clock .date .day .digit {
-    width: 271px !important;
-    height: 200px !important;
-  }
-  .clock .panel h4 {
-    font-size: 15px;
-  }
-  .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
-    width: 271px !important;
-    height: 200px !important;
-  }
-  .clock .colon p {
-    top: 0;
-  }
-  .wrapper-contact .center-content .top-portion img {
-    width: 260px;
-    height: 169px;
-  }
-  .wrapper-contact .corner {
-    width: 82px;
-  }
-}
-@media (max-width: 800px) {
-  .wrapper-contact .center-content .top-portion img {
-    width: 83px;
-    height: 55px;
-  }
 }/*# sourceMappingURL=style.css.map */

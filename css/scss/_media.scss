@@ -63,64 +63,64 @@
         }
     }
 }
-@media (max-width:1000px){
-    .pop-up {
-        .pop-center-parent{
-            .silver{
-                margin-bottom: 25px !important;
-            }
-        }
-    }
-    .clock{
-        font-size: 73px;
-        .date{
-            .month,.date,.day{
-                .digit{
-                    width: 271px !important;
-                    height: 200px !important;    
-                }
-            }
-        }
-        .panel{
-            h4{
-                font-size: 15px;
-            }
-            .hour,.minutes,.seconds{
-                .digit{
-                    width: 271px !important;
-                    height: 200px !important;          
-                }
-            }
-        }
-        .colon{
-            p{
-                top: 0;
-            }
-        }
-    }
-    .wrapper-contact{
-        .center-content{
-            .top-portion{
-                img{
-                    width: 260px;
-                    height: 169px;           
-                }
-            }
-        }
-        .corner{
-            width: 82px;
-        }
-    }
-}
-@media (max-width:800px){
-    .wrapper-contact{
-        .center-content{
-            .top-portion{
-                img{
-                    width: 83px;
-                    height: 55px;    
-                }
-            }
-        }
-    }
-}
+// @media (max-width:1000px){
+//     .pop-up {
+//         .pop-center-parent{
+//             .silver{
+//                 margin-bottom: 25px !important;
+//             }
+//         }
+//     }
+//     .clock{
+//         font-size: 73px;
+//         .date{
+//             .month,.date,.day{
+//                 .digit{
+//                     width: 271px !important;
+//                     height: 200px !important;    
+//                 }
+//             }
+//         }
+//         .panel{
+//             h4{
+//                 font-size: 15px;
+//             }
+//             .hour,.minutes,.seconds{
+//                 .digit{
+//                     width: 271px !important;
+//                     height: 200px !important;          
+//                 }
+//             }
+//         }
+//         .colon{
+//             p{
+//                 top: 0;
+//             }
+//         }
+//     }
+//     .wrapper-contact{
+//         .center-content{
+//             .top-portion{
+//                 img{
+//                     width: 260px;
+//                     height: 169px;           
+//                 }
+//             }
+//         }
+//         .corner{
+//             width: 82px;
+//         }
+//     }
+// }
+// @media (max-width:800px){
+//     .wrapper-contact{
+//         .center-content{
+//             .top-portion{
+//                 img{
+//                     width: 83px;
+//                     height: 55px;    
+//                 }
+//             }
+//         }
+//     }
+// }
