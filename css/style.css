@@ -659,7 +659,6 @@ section .wrapper .contact i {
   padding: 5px;
   border-radius: 5px;
   filter: drop-shadow(0 0 3px #000);
-  transform: scaleY(1.7);
 }
 .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
   background-image: url(../img/number-panel.png);
@@ -697,7 +696,7 @@ section .wrapper .contact i {
   padding: 5px;
   border-radius: 5px;
   filter: drop-shadow(0 0 3px #000);
-  transform: scaleY(1.7);
+  transform: scaleY(1);
 }
 .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
   background-image: url(../img/number-panel.png);
@@ -809,9 +808,10 @@ section .wrapper .contact i {
 @media (max-width: 1304px) {
   .clock {
     font-size: 91px;
+    transform: scaleY(1.7);
   }
   .clock .date {
-    margin-right: 5px;
+    margin-right: 14px;
   }
   .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
     width: 56px !important;

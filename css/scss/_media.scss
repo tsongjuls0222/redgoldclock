@@ -28,8 +28,9 @@
 @media (max-width:1304px){
     .clock{
         font-size: 91px;
+        transform: scaleY(1.7);
         .date{
-            margin-right: 5px;
+            margin-right: 14px;
             .month,.date,.year{
                 .digit{
                     width: 56px !important;
