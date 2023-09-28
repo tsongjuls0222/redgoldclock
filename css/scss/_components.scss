@@ -3,12 +3,12 @@
     align-items: center;
     font-size: 132px;
     font-weight: 700;
-    gap: 8px;
+    gap: 0px;
     .date{
         display: flex;
         align-items: center;
         margin-right: 40px;
-        gap: 13px;
+        gap: 4px;
         .month,.date,.year{
             display: flex;
             align-items: center;
@@ -16,6 +16,7 @@
             padding: 5px;
             border-radius: 5px;
             filter: drop-shadow(0 0 3px #000);
+            transform: scaleY(1.7);
             .digit{
                 background-image: url(../img/number-panel.png);
                 width: 78px;
@@ -53,6 +54,7 @@
             padding: 5px;
             border-radius: 5px;
             filter: drop-shadow(0 0 3px #000);
+            transform: scaleY(1.7);
             .digit{
                 background-image: url(../img/number-panel.png);
                 width: 78px;

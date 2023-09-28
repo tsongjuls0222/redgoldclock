@@ -184,6 +184,20 @@ html, body {
   overflow: hidden;
 }
 
+body::before {
+  content: "";
+  display: block;
+  background-image: url(../img/logo.png);
+  width: 103%;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.1;
+  top: -5px;
+  left: -162px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background: #000000;
@@ -535,6 +549,7 @@ section .wrapper .contact i {
   gap: 0;
   height: 100%;
   justify-content: space-evenly;
+  z-index: 10;
 }
 .wrapper-contact .center-content .top-portion {
   display: flex;
@@ -605,7 +620,7 @@ section .wrapper .contact i {
   visibility: hidden;
 }
 .wrapper-contact .center-content h1.silver {
-  margin-bottom: -106px;
+  margin-bottom: -77px;
 }
 .wrapper-contact .center-content h1:last-child {
   font-size: 10.5vw;
@@ -629,13 +644,13 @@ section .wrapper .contact i {
   align-items: center;
   font-size: 132px;
   font-weight: 700;
-  gap: 8px;
+  gap: 0px;
 }
 .clock .date {
   display: flex;
   align-items: center;
   margin-right: 40px;
-  gap: 13px;
+  gap: 4px;
 }
 .clock .date .month, .clock .date .date, .clock .date .year {
   display: flex;
@@ -644,6 +659,7 @@ section .wrapper .contact i {
   padding: 5px;
   border-radius: 5px;
   filter: drop-shadow(0 0 3px #000);
+  transform: scaleY(1.7);
 }
 .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
   background-image: url(../img/number-panel.png);
@@ -681,6 +697,7 @@ section .wrapper .contact i {
   padding: 5px;
   border-radius: 5px;
   filter: drop-shadow(0 0 3px #000);
+  transform: scaleY(1.7);
 }
 .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
   background-image: url(../img/number-panel.png);
@@ -794,7 +811,7 @@ section .wrapper .contact i {
     font-size: 91px;
   }
   .clock .date {
-    margin-right: 19px;
+    margin-right: 5px;
   }
   .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
     width: 56px !important;
@@ -817,25 +834,25 @@ section .wrapper .contact i {
     margin-bottom: 25px !important;
   }
   .clock {
-    font-size: 61px;
+    font-size: 73px;
   }
   .clock .date .month .digit, .clock .date .date .digit, .clock .date .year .digit {
-    width: 44px !important;
-    height: 73px !important;
+    width: 49px !important;
+    height: 80px !important;
   }
   .clock .panel h4 {
     font-size: 15px;
   }
   .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
-    width: 44px !important;
-    height: 73px !important;
+    width: 49px !important;
+    height: 80px !important;
   }
   .clock .colon p {
-    top: -18px;
+    top: 0;
   }
   .wrapper-contact .center-content .top-portion img {
-    width: 220px;
-    height: 136px;
+    width: 260px;
+    height: 169px;
   }
   .wrapper-contact .corner {
     width: 82px;

@@ -29,7 +29,7 @@
     .clock{
         font-size: 91px;
         .date{
-            margin-right: 19px;
+            margin-right: 5px;
             .month,.date,.year{
                 .digit{
                     width: 56px !important;
@@ -71,12 +71,12 @@
         }
     }
     .clock{
-        font-size: 61px;
+        font-size: 73px;
         .date{
             .month,.date,.year{
                 .digit{
-                    width: 44px !important;
-                    height: 73px !important;         
+                    width: 49px !important;
+                    height: 80px !important;      
                 }
             }
         }
@@ -86,14 +86,14 @@
             }
             .hour,.minutes,.seconds{
                 .digit{
-                    width: 44px !important;
-                    height: 73px !important;            
+                    width: 49px !important;
+                    height: 80px !important;          
                 }
             }
         }
         .colon{
             p{
-                top: -18px;
+                top: 0;
             }
         }
     }
@@ -101,8 +101,8 @@
         .center-content{
             .top-portion{
                 img{
-                    width: 220px;
-                    height: 136px;             
+                    width: 260px;
+                    height: 169px;           
                 }
             }
         }

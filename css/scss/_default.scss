@@ -185,6 +185,21 @@ html,body {
     user-select: none;
     overflow: hidden;
 }
+body{
+    &::before{
+        content: "";
+        display: block;
+        background-image: url(../img/logo.png);
+        width: 103%;
+        background-repeat: no-repeat;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.1;
+        top: -5px;
+        left: -162px;
+    }
+}
 ::-webkit-scrollbar {
     width: 10px;
     background: #000000;

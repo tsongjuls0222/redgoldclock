@@ -104,7 +104,8 @@ section{
         align-items: center;
         gap: 0;
         height: 100%;
-        justify-content: space-evenly;    
+        justify-content: space-evenly;   
+        z-index: 10; 
         .top-portion{
             display: flex;
             justify-content: space-between;
@@ -168,7 +169,7 @@ section{
                 visibility: hidden;
             }
             &.silver{
-                margin-bottom: -106px;
+                margin-bottom: -77px;
             }
             &:last-child{
                 font-size: 10.5vw;
