@@ -48,6 +48,10 @@ function myTimer(){
     const seconds = currentDate.getSeconds();
     const inday = currentDate.getDay()
 
+    $(".date .month .digit:first-child span").html(formatTime(month).toString().charAt(0));
+    $(".date .month .digit:last-child span").html(formatTime(month).toString().charAt(1));
+    $(".date .day .digit:first-child span").html(formatTime(day).toString().charAt(0));
+    $(".date .day .digit:last-child span").html(formatTime(day).toString().charAt(1));
     $(".clock .hour .digit:first-child span").html(formatTime(hours).toString().charAt(0));
     $(".clock .hour .digit:last-child span").html(formatTime(hours).toString().charAt(1));
     $(".clock .minutes .digit:first-child span").html(formatTime(minutes).toString().charAt(0));
