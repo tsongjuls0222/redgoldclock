@@ -74,23 +74,23 @@ section{
     }
     .corner{
         position: absolute;
-        width: 106px;
+        width: 89px;
         filter: drop-shadow(0px 0px 6px rgb(2, 2, 2));
         &.corner-1{
-            top: 10px;
-            left: 10px;
+            top: 5px;
+            left: 5px;
         }
         &.corner-2{
-            top: 10px;
-            right: 10px;
+            top: 5px;
+            right: 5px;
         }
         &.corner-3{
-            bottom: 10px;
-            right: 10px;
+            bottom: 5px;
+            right: 5px;
         }
         &.corner-4{
-            bottom: 10px;
-            left: 10px;
+            bottom: 5px;
+            left: 5px;
         }
     }
     .center-content{

@@ -518,24 +518,24 @@ section .wrapper .contact i {
 }
 .wrapper-contact .corner {
   position: absolute;
-  width: 106px;
+  width: 89px;
   filter: drop-shadow(0px 0px 6px rgb(2, 2, 2));
 }
 .wrapper-contact .corner.corner-1 {
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
 }
 .wrapper-contact .corner.corner-2 {
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
 }
 .wrapper-contact .corner.corner-3 {
-  bottom: 10px;
-  right: 10px;
+  bottom: 5px;
+  right: 5px;
 }
 .wrapper-contact .corner.corner-4 {
-  bottom: 10px;
-  left: 10px;
+  bottom: 5px;
+  left: 5px;
 }
 .wrapper-contact .center-content {
   width: -moz-fit-content;
