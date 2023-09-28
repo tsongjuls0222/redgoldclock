@@ -838,15 +838,15 @@ section .wrapper .contact i {
     font-size: 73px;
   }
   .clock .date .month .digit, .clock .date .date .digit, .clock .date .day .digit {
-    width: 49px !important;
-    height: 80px !important;
+    width: 271px !important;
+    height: 200px !important;
   }
   .clock .panel h4 {
     font-size: 15px;
   }
   .clock .panel .hour .digit, .clock .panel .minutes .digit, .clock .panel .seconds .digit {
-    width: 49px !important;
-    height: 80px !important;
+    width: 271px !important;
+    height: 200px !important;
   }
   .clock .colon p {
     top: 0;
